@@ -1,7 +1,7 @@
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { GithubIcon } from "../../components/common/BrandIcons";
 import { ProjectImage } from "../../components/common/ProjectImage";
-import { TechnologyBadge } from "../../components/common/TechnologyBadge";
+import { TechChip } from "../../components/common/TechChip";
 import { Badge } from "../../components/ui/Badge";
 import { Card } from "../../components/ui/Card";
 import type { Project } from "../../types/portfolio";
@@ -35,7 +35,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         <div className="mt-5 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
-            <TechnologyBadge key={tech} name={tech} />
+            <TechChip key={tech} name={tech} />
           ))}
         </div>
 

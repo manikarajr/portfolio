@@ -1,5 +1,5 @@
 import { Cloud, Database, Layout, Server, Sparkles, Terminal, Workflow, type LucideIcon } from "lucide-react";
-import { TechIcon } from "../../components/common/TechIcon";
+import { TechChip } from "../../components/common/TechChip";
 import { Card } from "../../components/ui/Card";
 import type { SkillCategory as SkillCategoryType, SkillCategoryName } from "../../types/portfolio";
 
@@ -28,12 +28,8 @@ export function SkillCategory({ category }: SkillCategoryProps) {
       </h3>
       <ul className="mt-4 flex flex-1 flex-wrap content-start items-start gap-2">
         {category.skills.map((skill) => (
-          <li
-            key={skill.name}
-            className="inline-flex items-center gap-1.5 rounded-md bg-neutral-100 px-2.5 py-1 text-sm text-neutral-700 dark:bg-slate-800 dark:text-slate-300"
-          >
-            <TechIcon name={skill.name} colored className="h-4 w-4 shrink-0" />
-            {skill.name}
+          <li key={skill.name}>
+            <TechChip name={skill.name} variant="pill" colored />
           </li>
         ))}
       </ul>

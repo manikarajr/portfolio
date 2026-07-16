@@ -19,7 +19,7 @@ export function Education() {
 
         <div className="mt-12 grid gap-6 lg:grid-cols-2">
           <AnimatedSection variant="fade-right">
-            <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-500">
+            <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-400">
               <GraduationCap className="h-4 w-4" aria-hidden="true" />
               Education
             </h3>
@@ -28,7 +28,7 @@ export function Education() {
                 <Card key={item.id}>
                   <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline">
                     <h4 className="font-semibold text-neutral-900 dark:text-white">{item.degree}</h4>
-                    <p className="font-mono text-sm text-neutral-500 dark:text-slate-500">
+                    <p className="font-mono text-sm text-neutral-500 dark:text-slate-400">
                       {item.startYear === item.endYear ? item.endYear : `${item.startYear} – ${item.endYear}`}
                     </p>
                   </div>
@@ -54,7 +54,7 @@ export function Education() {
           </AnimatedSection>
 
           <AnimatedSection delay={100} variant="fade-left">
-            <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-500">
+            <h3 className="mb-4 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-400">
               <Award className="h-4 w-4" aria-hidden="true" />
               Certifications
             </h3>
@@ -77,7 +77,7 @@ export function Education() {
                       )}
                     </h4>
                     {cert.year && (
-                      <p className="font-mono text-sm text-neutral-500 dark:text-slate-500">{cert.year}</p>
+                      <p className="font-mono text-sm text-neutral-500 dark:text-slate-400">{cert.year}</p>
                     )}
                   </div>
                   <p className="mt-1 text-sm text-neutral-600 dark:text-slate-400">{cert.issuer}</p>

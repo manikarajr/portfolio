@@ -2,6 +2,7 @@ import { Briefcase, CheckCircle2, MapPin, User } from "lucide-react";
 import { AnimatedSection } from "../../components/common/AnimatedSection";
 import { Avatar } from "../../components/common/Avatar";
 import { Container } from "../../components/common/Container";
+import { FadeInImage } from "../../components/common/FadeInImage";
 import { SectionHeading } from "../../components/common/SectionHeading";
 import { Card } from "../../components/ui/Card";
 import { portfolioImages } from "../../data/images";
@@ -36,7 +37,7 @@ export function About() {
             </div>
 
             <div className="my-8 overflow-hidden rounded-2xl border border-neutral-200/80 shadow-lg shadow-neutral-900/[0.05] dark:border-slate-800">
-              <img
+              <FadeInImage
                 src={portfolioImages.about.src}
                 alt={portfolioImages.about.alt}
                 width={portfolioImages.about.width}

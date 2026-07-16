@@ -1,4 +1,4 @@
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 import { Container } from "../common/Container";
 import { SocialLinks } from "../common/SocialLinks";
 import { navigation } from "../../data/navigation";
@@ -41,7 +41,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col-reverse items-center justify-between gap-6 border-t border-neutral-200 pt-8 sm:flex-row dark:border-slate-800">
-          <p className="text-sm text-neutral-500 dark:text-slate-500">
+          <p className="text-sm text-neutral-500 dark:text-slate-400">
             &copy; {year} {profile.name}. All rights reserved.
           </p>
 

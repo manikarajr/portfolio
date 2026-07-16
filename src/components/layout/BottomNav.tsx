@@ -47,7 +47,7 @@ export function BottomNav({ activeId }: BottomNavProps) {
                     "flex h-8 w-8 items-center justify-center rounded-xl transition-all duration-200",
                     isActive
                       ? "bg-brand-50 text-brand-600 dark:bg-brand-950 dark:text-brand-400"
-                      : "text-neutral-500 dark:text-slate-500",
+                      : "text-neutral-500 dark:text-slate-400",
                   )}
                 >
                   <Icon className="h-[19px] w-[19px]" aria-hidden="true" />
@@ -55,7 +55,7 @@ export function BottomNav({ activeId }: BottomNavProps) {
                 <span
                   className={cn(
                     "w-full truncate text-center text-[9.5px] font-medium leading-none transition-colors duration-200",
-                    isActive ? "text-brand-600 dark:text-brand-400" : "text-neutral-500 dark:text-slate-500",
+                    isActive ? "text-brand-600 dark:text-brand-400" : "text-neutral-500 dark:text-slate-400",
                   )}
                 >
                   {item.label}

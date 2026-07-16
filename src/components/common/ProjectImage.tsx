@@ -1,5 +1,6 @@
 import type { PortfolioImage } from "../../types/portfolio";
 import { cn } from "../../utils/cn";
+import { FadeInImage } from "./FadeInImage";
 import { TechIcon } from "./TechIcon";
 
 interface ProjectImageProps {
@@ -18,7 +19,7 @@ export function ProjectImage({ image, technologies, className }: ProjectImagePro
   if (image) {
     return (
       <div className={cn("relative aspect-video w-full overflow-hidden", className)}>
-        <img
+        <FadeInImage
           src={image.src}
           alt={image.alt}
           width={image.width}

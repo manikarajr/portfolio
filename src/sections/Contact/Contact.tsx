@@ -1,4 +1,5 @@
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { lazy, Suspense } from "react";
 import { AnimatedSection } from "../../components/common/AnimatedSection";
 import { Container } from "../../components/common/Container";
 import { SectionHeading } from "../../components/common/SectionHeading";
@@ -6,7 +7,22 @@ import { SocialLinks } from "../../components/common/SocialLinks";
 import { Card } from "../../components/ui/Card";
 import { profile } from "../../data/profile";
 import { socialLinks } from "../../data/social";
-import { ContactForm } from "./ContactForm";
+
+const ContactForm = lazy(() => import("./ContactForm").then((module) => ({ default: module.ContactForm })));
+
+function ContactFormSkeleton() {
+  return (
+    <div className="animate-pulse space-y-5" aria-hidden="true">
+      <div className="grid gap-5 sm:grid-cols-2">
+        <div className="h-[68px] rounded-lg bg-neutral-100 dark:bg-slate-800" />
+        <div className="h-[68px] rounded-lg bg-neutral-100 dark:bg-slate-800" />
+      </div>
+      <div className="h-[68px] rounded-lg bg-neutral-100 dark:bg-slate-800" />
+      <div className="h-[148px] rounded-lg bg-neutral-100 dark:bg-slate-800" />
+      <div className="h-11 w-36 rounded-full bg-neutral-100 dark:bg-slate-800" />
+    </div>
+  );
+}
 
 export function Contact() {
   return (
@@ -73,7 +89,9 @@ export function Contact() {
 
           <AnimatedSection delay={100} variant="fade-left" className="lg:col-span-3">
             <Card>
-              <ContactForm />
+              <Suspense fallback={<ContactFormSkeleton />}>
+                <ContactForm />
+              </Suspense>
             </Card>
           </AnimatedSection>
         </div>

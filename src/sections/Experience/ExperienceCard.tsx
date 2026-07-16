@@ -1,6 +1,6 @@
 import { ListChecks, Trophy } from "lucide-react";
 import { CompanyMark } from "../../components/common/CompanyMark";
-import { TechnologyBadge } from "../../components/common/TechnologyBadge";
+import { TechChip } from "../../components/common/TechChip";
 import { Card } from "../../components/ui/Card";
 import type { WorkExperience } from "../../types/portfolio";
 
@@ -23,7 +23,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
             </p>
           </div>
         </div>
-        <p className="shrink-0 font-mono text-sm text-neutral-500 dark:text-slate-500">
+        <p className="shrink-0 font-mono text-sm text-neutral-500 dark:text-slate-400">
           {experience.startDate} &ndash; {experience.endDate}
         </p>
       </div>
@@ -31,7 +31,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
       <p className="mt-4 text-sm leading-relaxed text-neutral-600 dark:text-slate-400">{experience.summary}</p>
 
       <div className="mt-5">
-        <h4 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-500">
+        <h4 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-400">
           <ListChecks className="h-3.5 w-3.5" aria-hidden="true" />
           Key Responsibilities
         </h4>
@@ -46,7 +46,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
       </div>
 
       <div className="mt-5">
-        <h4 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-500">
+        <h4 className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-slate-400">
           <Trophy className="h-3.5 w-3.5" aria-hidden="true" />
           Achievements
         </h4>
@@ -62,7 +62,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
 
       <div className="mt-5 flex flex-wrap gap-2">
         {experience.technologies.map((tech) => (
-          <TechnologyBadge key={tech} name={tech} />
+          <TechChip key={tech} name={tech} />
         ))}
       </div>
     </Card>

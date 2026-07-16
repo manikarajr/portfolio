@@ -1,5 +1,5 @@
 import type { PortfolioProfile } from "../types/portfolio";
-import rajuAvatar from "../assets/raju.png";
+import rajuAvatar from "../assets/raju.webp";
 
 /**
  * Central identity record for the site. Replace these values with your own —
@@ -15,14 +15,14 @@ export const profile: PortfolioProfile = {
     "Software Developer with 3 years of experience building scalable, secure, and high-performance web applications using Angular, ASP.NET Core 8, C#, Entity Framework Core, and MS SQL Server — with React as part of my toolkit.",
   bio: [
     "I'm a Software Developer with three years of experience building scalable, secure, and high-performance web applications using Angular (v13–20) with Signals and Standalone Components, ASP.NET Core 8, C#, Entity Framework Core, and MS SQL Server, and I'm expanding that toolkit with React.",
-    "At CKS Solutions, I've architected full-stack features across 3 production applications serving 300+ concurrent users, built reusable Angular component libraries and ASP.NET Core REST APIs, and spearheaded a Gemini AI integration that automated evaluation workflows and cut manual grading effort by 60%.",
+    "At CKS Solutions, I work across the full stack — from Angular component libraries to ASP.NET Core APIs and SQL Server schemas — on production applications used by hundreds of concurrent users, with a recent focus on integrating Gemini AI to cut down manual, repetitive work. The specifics and numbers are in the Experience section below.",
     "I apply SOLID principles, Dependency Injection, and the Repository Pattern across API layers to keep codebases clean, testable, and maintainable, and I favor pragmatic, well-documented solutions delivered through Agile/Scrum sprints.",
   ],
   strengths: [
-    "Architecting full-stack features across production applications serving 300+ concurrent users",
-    "Improving API performance and database efficiency through query tuning, caching, and indexing",
-    "Integrating AI (Gemini AI) to automate workflows and reduce manual effort",
-    "Applying SOLID principles, Dependency Injection, and the Repository Pattern for maintainable .NET codebases",
+    "Turning ambiguous requirements into clean, maintainable full-stack architecture",
+    "Diagnosing performance bottlenecks across the stack — from SQL indexes to front-end rendering",
+    "Judging where AI genuinely saves time versus where it adds risk",
+    "Writing code the next developer — often future me — can pick up without a walkthrough",
   ],
   philosophy:
     "Ship in small, reviewable increments; optimize for the developer who reads this code next; measure before you optimize; secure, well-tested code is a requirement, not polish.",

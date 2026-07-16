@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
 import { useEffect, useState } from "react";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logo.png";
 import { Container } from "../common/Container";
 import { profile } from "../../data/profile";
 import { navigation } from "../../data/navigation";
