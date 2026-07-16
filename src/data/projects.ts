@@ -54,6 +54,7 @@ export const projects: Project[] = [
       "ASP.NET Core 8",
       "Entity Framework Core",
       "LINQ",
+      "Gemini AI",
       "REST APIs",
       "Swagger",
       "MS SQL Server",

@@ -4,7 +4,7 @@ export const experiences: WorkExperience[] = [
   {
     id: "exp-cks-solutions",
     company: "CKS Solutions",
-    role: "Full Stack Developer",
+    role: "Software Developer",
     location: "Nagercoil, Tamil Nadu",
     employmentType: "Full-time",
     startDate: "Jun 2023",
@@ -36,7 +36,7 @@ export const experiences: WorkExperience[] = [
   {
     id: "exp-digisailor",
     company: "Digisailor",
-    role: "Full Stack Developer Intern",
+    role: "Software Engineer",
     location: "Thoothukudi, Tamil Nadu",
     employmentType: "Internship",
     startDate: "Nov 2022",
